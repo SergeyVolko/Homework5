@@ -10,27 +10,35 @@ public class Main {
     public static void task1() {
         System.out.println("Задача 1");
         int clientOS = 1;
-        if (clientOS == 0) {
+        int iOs = 0;
+        int android = 1;
+        if (clientOS == iOs) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else {
+        } else if (clientOS == android){
             System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Операционная система не поддерживает данную версию");
         }
     }
 
     public static void task2() {
         System.out.println("Задача 2");
         int clientOS = 1;
-        int clientDeviceYear = 2015;
-        if (clientOS == 0 && clientDeviceYear < 2015) {
+        int iOs = 0;
+        int android = 1;
+        int checkYear  = 2015;
+        if (clientOS == iOs && checkYear < 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0) {
+        } else if (clientOS == iOs) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientDeviceYear < 2015) {
+        } else if (checkYear < 2015 && clientOS == android) {
             System.out.println("Установите версию приложения для Android по ссылке");
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else {
+        } else if (clientOS == android){
             System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Операционная система не поддерживает данную версию");
         }
     }
 
