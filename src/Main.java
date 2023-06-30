@@ -26,13 +26,14 @@ public class Main {
         int clientOS = 1;
         int iOs = 0;
         int android = 1;
+        int year = 2020;
         int checkYear  = 2015;
-        if (clientOS == iOs && checkYear < 2015) {
+        if (clientOS == iOs && year < checkYear) {
             System.out.println("Установите версию приложения для iOS по ссылке");
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         } else if (clientOS == iOs) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (checkYear < 2015 && clientOS == android) {
+        } else if (year < checkYear && clientOS == android) {
             System.out.println("Установите версию приложения для Android по ссылке");
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else if (clientOS == android){
